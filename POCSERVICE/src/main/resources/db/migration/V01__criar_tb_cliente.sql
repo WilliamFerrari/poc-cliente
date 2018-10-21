@@ -1,0 +1,10 @@
+CREATE TABLE cliente (
+	codigo BIGINT(20) PRIMARY KEY AUTO_INCREMENT,
+	razao_social VARCHAR(120) NOT NULL,
+	nome_fantasia VARCHAR(120) NOT NULL,
+	cnpj_cpf VARCHAR(14) NOT NULL,
+	telefone1 VARCHAR(12) NOT NULL,
+	telefone2 VARCHAR(12),
+	status BIGINT(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
